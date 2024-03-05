@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-var users = GenerateUsers();
+﻿var users = GenerateUsers();
 
 var countByTypeOld = users.GroupBy(x => x.Type).Select(x => new KeyValuePair<UserType, int>(x.Key, x.Count()));
 Console.WriteLine("count by type, old:");
